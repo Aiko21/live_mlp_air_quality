@@ -1,0 +1,90 @@
+columns_datetime:
+- tanggal
+columns_int:
+- pm10
+- pm25
+- so2
+- co
+- o3
+- no2
+- max
+features:
+- stasiun
+- pm10
+- pm25
+- so2
+- co
+- o3
+- no2
+impute_co: 11.0
+impute_no2: 18.0
+impute_o3: 28.0
+impute_pm10:
+  BAIK: 28.54861111111111
+  TIDAK BAIK: 55.284694686756545
+impute_pm25:
+  BAIK: 40.07692307692308
+  TIDAK BAIK: 82.52950432730134
+impute_so2: 35.191443074691804
+label: category
+label_categories:
+- BAIK
+- SEDANG
+- TIDAK SEHAT
+label_categories_new:
+- BAIK
+- TIDAK BAIK
+object_columns:
+- stasiun
+- critical
+- category
+path_clean_test:
+- ../data/processed/X_test_clean.pkl
+- ../data/processed/y_test_clean.pkl
+path_clean_train:
+- ../data/processed/X_train_clean.pkl
+- ../data/processed/y_train_clean.pkl
+path_clean_valid:
+- ../data/processed/X_valid_clean.pkl
+- ../data/processed/y_valid_clean.pkl
+path_fitted_encoder_label: ../models/label_encoder.pkl
+path_fitted_encoder_stasiun: ../models/ohe_stasiun.pkl
+path_fitted_scaler: ../models/scaler.pkl
+path_joined_data: ../data/interim/joined_dataset.pkl
+path_production_model: ../models/best_model.pkl
+path_raw_data: ../data/raw/
+path_test_set:
+- ../data/interim/X_test.pkl
+- ../data/interim/y_test.pkl
+path_train_set:
+- ../data/interim/X_train.pkl
+- ../data/interim/y_train.pkl
+path_training_log: ../logs/training_log.json
+path_valid_set:
+- ../data/interim/X_valid.pkl
+- ../data/interim/y_valid.pkl
+path_validated_data: ../data/interim/validated_data.pkl
+range_co:
+- -1
+- 47
+range_no2:
+- -1
+- 65
+range_o3:
+- -1
+- 151
+range_pm10:
+- -1
+- 179
+range_pm25:
+- -1
+- 174
+range_so2:
+- -1
+- 82
+range_stasiun:
+- DKI1 (Bunderan HI)
+- DKI2 (Kelapa Gading)
+- DKI3 (Jagakarsa)
+- DKI4 (Lubang Buaya)
+- DKI5 (Kebon Jeruk) Jakarta Barat
