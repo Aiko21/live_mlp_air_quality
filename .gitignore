@@ -1,0 +1,4 @@
+.venv_air_quality/
+**/.ipynb_checkpoints/
+data/
+logs/
